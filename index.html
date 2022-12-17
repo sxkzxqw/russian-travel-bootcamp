@@ -4,26 +4,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Russian Travel</title>
-        <link rel="stylesheet" href="./vendor/normalize.css">
         <link rel="stylesheet" href="./pages/index.css">
     </head>
-    <body>
-        <div class="page">
-            <header class="header">
+    <body class="root">
+            <!--заранее прошу прощения за небрежный код моментами, просто этот спринт дался мне очень трудно
+            и тема адаптива в том числе, старался написать код максимально правиильно-->
+            <header class="header content-container-header">
                 <nav class="header__nav">
                     <img class="header__logo" src="./images/header-logo.svg" alt="Логотип карта России">
-                    <div class="header__lang-links">
-                        <a class="header__lang-link  links-hover" href="#">Ru</a>
-                        <a class="header__lang-link  links-hover" href="#">En</a>
-                    </div>
+                    <ul class="header__lang-links">
+                        <li class="header__lang-link">
+                            <a class="header__lang-link  links-hover lang_link_selected" href="#">Ru</a>
+                        </li>
+                        <li class="header__lang-link">
+                            <a class="header__lang-link  links-hover" href="#">En</a>
+                        </li>
+                    </ul>
                 </nav>
-                <h1 class="header__title">Путешествия по России</h1>
-                <p class="header__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-                <img class="header__main-illustration" src="./images/lead-polka.jpg" alt="Декоративное изображение с картой поездки и поездом">
-                <p class="header__caption">ваша полка — верхняя</p>
             </header>
             <main class="content">
-                <section class="intro">
+                <section class="lead">
+                    <h1 class="lead__title">Путешествия по России</h1>
+                    <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
+                    <img class="lead__main-illustration" src="./images/lead-polka.jpg" alt="Декоративное изображение с картой поездки и поездом">
+                    <p class="lead__caption">ваша полка — верхняя</p>
+                </section>
+                <section class="intro content-container">
                     <h2 class="intro__title">Чего мы там не видели?</h2>
                     <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
                     <ul class="intro__list">
@@ -34,7 +40,7 @@
                         <li class="intro__statistic">Аэропортов&nbsp;<p class="intro__statistic-number">241</p></li>
                     </ul>
                 </section>
-                <section class="photo-grid">
+                <section class="photo-grid content-container">
                     <img src="./images/photo-grid-train.jpg" alt="Фото из поезда" class="photo-grid__item">
                     <img src="./images/photo-grid-atharva-tulsi.jpg" alt="Фото гор в снегу" class="photo-grid__item">
                     <img src="./images/photo-grid-tuman.jpg" alt="Фото собаки в тумане" class="photo-grid__item">
@@ -48,7 +54,7 @@
                     <img src="./images/photo-grid-baikal-2.jpg" alt="Фото озера Байкал и гор" class="photo-grid__item">
                     <img src="./images/photo-grid-ergaki.jpg" alt="Фото гор в тумане" class="photo-grid__item">
                 </section>
-                <section class="places">
+                <section class="places content-container-places">
                     <article class="place">
                         <h2 class="place__header">Куршская коса</h2>
                         <div class="place__links">
@@ -110,12 +116,14 @@
                 </section>
                 <section class="cover">
                     <a href="https://stampsy.com/na-elektrichkakh-do-baikala" class="cover__link cover__item" target="_blank">
-                        <h2 class="cover__title">До Байкала «на собаках»</h2>
+                        <!--с разрешением 320px nbsp не читался и пришлось задать его в div, в случае с subtitle так сделать не получилось, так как отображение 
+                        этого текста на разных разрешениях разное, поэтому пришлось выбирать между 320px и всеми остальными разрешениями.-->
+                        <h2 class="cover__title">До Байкала<div class="title__nbsp">&nbsp;</div>«на собаках»</h2>
                         <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.</p>
                     </a>
                 </section>
             </main>
-            <footer class="footer">
+            <footer class="footer content-container">
                 <nav class="footer__links">
                     <a class="footer__link links-hover" href="https://yandex.ru/maps" target="_blank">Карты</a>
                     <a class="footer__link links-hover" href="https://yandex.ru/pogoda" target="_blank">Погода</a>
@@ -127,6 +135,5 @@
                     <p class="footer__copyright">© 2022. Марсэль</p>
                 </div>
             </footer>
-        </div>
     </body>
 </html>
