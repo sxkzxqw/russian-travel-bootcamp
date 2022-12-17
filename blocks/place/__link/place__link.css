@@ -1,0 +1,12 @@
+.place__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122%;
+    color: white;
+}
+
+@media screen and (max-width: 420px) {
+    .place__link {
+         margin-left: 16px;
+    }
+}

@@ -1,0 +1,5 @@
+.place__links {
+    align-self: end;
+    display: grid;
+    gap: 12px;
+}

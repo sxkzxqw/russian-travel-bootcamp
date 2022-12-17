@@ -1,0 +1,23 @@
+.intro {
+    font-family: 'Inter', Arial, sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 984px;
+    margin: 92px auto;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .intro {
+         max-width: 703px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .intro {
+         margin-top: 64px;
+         max-width: 288px;
+         margin-bottom: 64px;
+    }
+}

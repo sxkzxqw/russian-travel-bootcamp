@@ -1,0 +1,7 @@
+.place__par {
+    margin: 0 0 26px;
+}
+
+.place__par:last-child {
+    margin: 0;
+}

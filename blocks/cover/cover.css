@@ -1,0 +1,12 @@
+.cover {
+    font-family: 'Inter', Arial, sans-serif;
+    color: white;
+    max-width: 1184px;
+    width: 100%;
+    aspect-ratio: 1.6;
+    max-height: 740px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
