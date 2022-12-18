@@ -10,3 +10,9 @@
           margin-top: 40px;
      }
 }
+
+@media screen and (max-width:1024px) {
+     .lead__main-illustration {
+          max-width: 928px;
+     }
+}
