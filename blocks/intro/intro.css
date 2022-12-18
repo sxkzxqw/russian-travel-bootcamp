@@ -8,6 +8,19 @@
     color: white;
 }
 
+@media (max-width: 1200px) {
+    .intro {
+         max-width: 928px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+         max-width: 768px;
+         padding: 0 24px;
+    }
+}
+
 @media (max-width: 768px) {
     .intro {
          max-width: 703px;
@@ -17,7 +30,8 @@
 @media screen and (max-width: 420px) {
     .intro {
          margin-top: 64px;
-         max-width: 288px;
+         max-width: 576px;
          margin-bottom: 64px;
+         padding: 0 16px;
     }
 }

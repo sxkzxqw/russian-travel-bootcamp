@@ -2,11 +2,28 @@
     font-family: 'Inter', Arial, sans-serif;
     margin-bottom: 92px;
     margin-top: 92px;
+    max-width: 1184px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 420px) {
     .places {
          margin-top: 64px;
          margin-bottom: 66px;
+    }
+}
+
+@media (max-width: 768px) {
+    .places {
+         max-width: 768px;
+         padding: 0 24px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .places {
+         max-width: 576px;
+         padding: 0 0;
     }
 }

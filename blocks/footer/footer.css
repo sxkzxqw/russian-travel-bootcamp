@@ -11,7 +11,8 @@
 
 @media (max-width: 768px) {
     .footer {
-         max-width: 703px;
+        max-width: 768px;
+        padding: 0 24px;
     }
 }
 
@@ -22,5 +23,18 @@
          margin-left: 0;
          align-items: flex-start;
          gap: 48px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+         max-width: 928px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .footer {
+         max-width: 576px;
+         padding: 0 16px;
     }
 }
