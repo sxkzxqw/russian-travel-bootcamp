@@ -11,13 +11,6 @@
     align-items: flex-end;
 }
 
-.header__nav {
-    margin-top: 28px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
 @media (max-width: 1200px) {
     .header {
          max-width: 928px;
